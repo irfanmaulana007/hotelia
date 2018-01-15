@@ -11,6 +11,6 @@ class User extends Authenticatable
     
     protected $table = 'ms_user';
     protected $fillable = [
-        'nama','telepon','email'
+        'id','nama','telepon','email','password'
     ];
 }

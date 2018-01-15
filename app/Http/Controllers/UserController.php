@@ -61,6 +61,7 @@ class UserController extends Controller
         $content->nama = $request->get('nama');
         $content->telepon = $request->get('telepon');
         $content->email = $request->get('email');
+        $content->email = $request->get('password');
 
         $content->save();
 
@@ -115,6 +116,7 @@ class UserController extends Controller
         $content->nama = $request->get('nama');
         $content->telepon = $request->get('telepon');
         $content->email = $request->get('email');
+        $content->email = $request->get('password');
 
         $content->save();
 

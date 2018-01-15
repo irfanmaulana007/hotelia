@@ -1,0 +1,336 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Raleway,sans-serif;
+  color: #fff; }
+
+a {
+  text-decoration: none;
+  transition: .2s; }
+  a:hover {
+    text-decoration: none !important; }
+  a.txt-white {
+    color: #ccc; }
+    a.txt-white:hover {
+      color: #fff;
+      text-decoration: underline !important; }
+
+.no-padding {
+  padding: 0px; }
+
+.no-margin {
+  margin: 0; }
+
+.row {
+  margin: 0; }
+
+.w-auto {
+  width: auto; }
+
+.w-100 {
+  width: 100%; }
+
+.border {
+  border: 1px solid #888;
+  transition: .2s; }
+  .border.border-hover:hover {
+    border-color: black; }
+
+.p-10 {
+  padding: 10px; }
+
+.p-20 {
+  padding: 20px; }
+
+.p-40-0 {
+  padding: 40px 0px; }
+
+.m-t-0 {
+  margin-top: 0px; }
+
+.bg-primary-dark {
+  background-color: #242a30;
+  color: white; }
+
+.fa-star {
+  color: gold; }
+
+.btn .btn-wide {
+  padding: 6px 36px; }
+
+.form-control, .input-group-addon {
+  border-radius: 1px; }
+
+header {
+  background-image: url("/img/banner.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover; }
+  header #greet {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    header #greet h1 {
+      font-size: 52px;
+      letter-spacing: 2px;
+      font-weight: bold; }
+    header #greet select, header #greet button {
+      width: 140px;
+      float: left;
+      margin: 0px 10px; }
+
+nav {
+  width: 100%;
+  height: 80px;
+  padding: 0px 40px;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  transition: .2s; }
+  nav.dark {
+    height: 60px;
+    line-height: 60px;
+    background-color: #242a30;
+    border-bottom: 1px solid #ddd; }
+    nav.dark #logo {
+      margin: 10px 0; }
+  nav #logo {
+    height: 40px;
+    margin: 20px 0;
+    line-height: 40px;
+    transition: .2s; }
+    nav #logo a {
+      color: inherit; }
+    nav #logo img {
+      height: 100%;
+      margin-right: 10px;
+      vertical-align: top; }
+    nav #logo .brand {
+      font-size: 18px;
+      font-weight: bold; }
+  nav #nav ul {
+    margin: 0;
+    padding: 0; }
+    nav #nav ul li {
+      list-style-type: none;
+      display: inline; }
+      nav #nav ul li.nav-item a {
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff; }
+        nav #nav ul li.nav-item a.active, nav #nav ul li.nav-item a:hover {
+          color: #4dcaca; }
+
+#breadcumb {
+  display: block;
+  width: 100%;
+  height: 10px; }
+  #breadcumb ul {
+    padding: 10px 16px;
+    list-style: none;
+    float: right; }
+    #breadcumb ul li {
+      display: inline;
+      font-size: 14px; }
+      #breadcumb ul li + li:before {
+        padding: 8px;
+        color: black;
+        content: "/\00a0"; }
+      #breadcumb ul li a {
+        color: #0275d8;
+        text-decoration: none; }
+        #breadcumb ul li a:hover {
+          color: #01447e;
+          text-decoration: underline; }
+
+#body-content {
+  min-height: 600px;
+  margin-top: 60px;
+  color: black;
+  z-index: 1; }
+  #body-content section {
+    padding: 40px 0;
+    min-height: 100px; }
+    #body-content section#stat {
+      padding: 20px 0;
+      background-image: url("../img/banner/2.png");
+      background-size: cover;
+      background-position: 0 -170px;
+      height: 200px; }
+      #body-content section#stat .stat-item {
+        color: #fff;
+        text-align: center; }
+        #body-content section#stat .stat-item .logo {
+          height: 80px;
+          width: 80px;
+          margin: 0 auto 10px;
+          border: 1px solid #fff;
+          border-radius: 50%; }
+          #body-content section#stat .stat-item .logo img {
+            padding: 18px;
+            height: 100%;
+            width: 100%; }
+        #body-content section#stat .stat-item h1, #body-content section#stat .stat-item h3 {
+          margin: 5px 0; }
+    #body-content section #slideshow {
+      width: 100%;
+      height: 400px;
+      margin-bottom: 20px; }
+      #body-content section #slideshow img {
+        width: 100%;
+        height: 100%; }
+    #body-content section #detail-panel {
+      width: auto;
+      border: 1px solid #888; }
+      #body-content section #detail-panel #title {
+        height: 36px;
+        font-size: 17px;
+        border-bottom: 1px solid #888;
+        line-height: 36px;
+        background-color: #242a30;
+        color: white; }
+        #body-content section #detail-panel #title ul {
+          padding: 0px; }
+          #body-content section #detail-panel #title ul a {
+            cursor: pointer;
+            color: white; }
+            #body-content section #detail-panel #title ul a.active, #body-content section #detail-panel #title ul a:hover {
+              color: #4dcaca; }
+          #body-content section #detail-panel #title ul li {
+            list-style-type: none;
+            display: inline;
+            padding: 8px 12px;
+            border-right: 1px solid #888; }
+      #body-content section #detail-panel #body {
+        min-height: 400px;
+        padding: 20px; }
+    #body-content section .box-highlight {
+      transition: .2s;
+      cursor: pointer; }
+      #body-content section .box-highlight img {
+        padding: 5px; }
+      #body-content section .box-highlight:hover {
+        border-color: black; }
+    #body-content section #collapse {
+      width: 100%; }
+      #body-content section #collapse .collapse-item {
+        border: 1px solid #888;
+        border-top: none; }
+        #body-content section #collapse .collapse-item:first-child {
+          border: 1px solid #888; }
+        #body-content section #collapse .collapse-item .collapse-head {
+          padding: 10px;
+          border-bottom: 1px solid #888;
+          background-color: #242a30;
+          color: white;
+          line-height: 20px;
+          cursor: pointer; }
+        #body-content section #collapse .collapse-item .collapse-body {
+          padding: 10px;
+          display: none; }
+
+#sidenav {
+  width: 100%;
+  background-color: #242a30;
+  color: white;
+  padding: 20px; }
+  #sidenav h4 {
+    margin-bottom: 20px;
+    margin-top: 0; }
+  #sidenav .filter {
+    margin: 10px 0;
+    border: 1px solid #888; }
+    #sidenav .filter .title h5 {
+      margin: 0;
+      padding: 10px;
+      border-bottom: 1px solid #888; }
+    #sidenav .filter .body {
+      padding: 10px; }
+      #sidenav .filter .body label {
+        display: block; }
+
+#grid-content {
+  width: 100%; }
+  #grid-content a {
+    color: inherit; }
+  #grid-content #head {
+    font-size: 18px;
+    font-weight: bold; }
+    #grid-content #head select {
+      margin: 0px 10px;
+      display: inline-block; }
+  #grid-content .item {
+    width: 100%;
+    border: 1px solid #888;
+    padding: 10px;
+    margin: 10px 0;
+    transition: .2s;
+    z-index: 1;
+    cursor: pointer; }
+    #grid-content .item img {
+      width: 100%;
+      height: 100%; }
+    #grid-content .item .detail {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+      font-weight: bold;
+      color: #4dcaca;
+      border: 2px solid #4dcaca;
+      padding: 0px 30px;
+      z-index: 2;
+      display: none; }
+    #grid-content .item h4 {
+      margin: 0 0 10px;
+      text-align: center;
+      font-weight: bold; }
+    #grid-content .item img {
+      width: 100%;
+      height: 100%; }
+    #grid-content .item .description {
+      text-align: center; }
+    #grid-content .item .content {
+      transition: .2s; }
+    #grid-content .item:hover .content {
+      opacity: .6; }
+    #grid-content .item:hover .detail {
+      display: block; }
+
+footer {
+  background-color: #242a30;
+  min-height: 100px;
+  text-align: center;
+  padding: 40px 0; }
+  footer a {
+    color: #4dcaca; }
+  footer .logo img {
+    height: 60px;
+    width: 60px; }
+  footer #socmed {
+    width: auto;
+    margin-top: 10px;
+    display: inline-block; }
+    footer #socmed .socmed-item {
+      width: 22px;
+      height: 22px;
+      text-align: center;
+      margin: 0px 10px;
+      border: 1px solid white;
+      border-radius: 50%;
+      float: left;
+      transition: .2s; }
+      footer #socmed .socmed-item a {
+        color: inherit; }
+      footer #socmed .socmed-item:hover {
+        border-color: #4dcaca; }
+        footer #socmed .socmed-item:hover a {
+          color: #4dcaca; }
+
+/*# sourceMappingURL=style.css.map */
